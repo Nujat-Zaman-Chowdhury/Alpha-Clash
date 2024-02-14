@@ -10,15 +10,75 @@
 </head>
 <body class="font-poppins">
     <main class="bg-[#010313] min-h-screen bg-[url(images/background.png)] bg-no-repeat bg-center">
-        <section class="home min-h-screen text-white flex justify-center items-center">
+        <section class="home min-h-screen text-white flex justify-center items-center hidden">
             <div class="flex gap-10 flex-col items-center justify-center">
             <h1 class="font-anton text-8xl">ALPHABET CLASH</h1>
             <p class="font-poppins text-xl">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
             <button class="btn bg-white text-black text-2xl font-semibold">Play Now</button>
             </div>
         </section>
-        <section class="play-ground">
-    
+        <section class="play-ground min-h-screen">
+            <!--screen-->
+            <div class="flex flex-col justify-center items-center gap-20 pt-20">
+                <div class="artboard artboard-horizontal phone-6 border-[20px] border-[#010313CC] rounded-2xl bg-[#FFFFFFB3] flex flex-col justify-center items-center">
+                    <div class="flex justify-center">
+                        <p class="bg-[#2F2941] text-white font-medium text-lg px-7 pb-4 rounded-b-xl">Don't watch keyboard  while playing...</p>
+                    </div>
+                    
+                    <div class="flex justify-center items-center h-full"><p class="text-[#010313] font-bold text-[128px]">Y</p></div>
+                    
+                </div>
+                <!--keyboard start-->
+                <div>
+                    <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd class="kbd">q</kbd>
+                        <kbd class="kbd">w</kbd>
+                        <kbd class="kbd">e</kbd>
+                        <kbd class="kbd">r</kbd>
+                        <kbd class="kbd">t</kbd>
+                        <kbd class="kbd">y</kbd>
+                        <kbd class="kbd">u</kbd>
+                        <kbd class="kbd">i</kbd>
+                        <kbd class="kbd">o</kbd>
+                        <kbd class="kbd">p</kbd>
+                      </div> 
+                      <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd class="kbd">a</kbd>
+                        <kbd class="kbd">s</kbd>
+                        <kbd class="kbd">d</kbd>
+                        <kbd class="kbd">f</kbd>
+                        <kbd class="kbd">g</kbd>
+                        <kbd class="kbd">h</kbd>
+                        <kbd class="kbd">j</kbd>
+                        <kbd class="kbd">k</kbd>
+                        <kbd class="kbd">l</kbd>
+                      </div> 
+                      <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd class="kbd">z</kbd>
+                        <kbd class="kbd">x</kbd>
+                        <kbd class="kbd">c</kbd>
+                        <kbd class="kbd">v</kbd>
+                        <kbd class="kbd">b</kbd>
+                        <kbd class="kbd">n</kbd>
+                        <kbd class="kbd">m</kbd>
+                        <kbd class="kbd">/</kbd>
+                      </div>
+                </div>
+                <!--keyboard end-->
+                <!--life score-->
+                <div class="flex justify-between w-2/3">
+                    <button class="btn text-white bg-[#894189] border-0 rounded-full font-inter">
+                        Life
+                        <img src="images/life.svg" alt="">
+                        <p>1</p>
+                    </button>
+                    <button class="btn text-white bg-[#894189] border-0 rounded-full font-inter">
+                        Life
+                        <img src="images/monetization.svg" alt="">
+                        <p>1</p>
+                    </button>
+                </div>
+            </div>
         </section>
         <section class="score">
             
