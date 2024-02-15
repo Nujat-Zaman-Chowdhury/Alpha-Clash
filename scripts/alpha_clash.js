@@ -42,12 +42,16 @@ function gameOver(){
 
 function handleKeyboardButtonPress(event){
     const pressedKey = event.key;
+
+    if(pressedKey === 'Escape'){
+        gameOver();
+    }
     
 
     const currentAlphabetElement = document.getElementById('current-alphabet');
     const currentAlphabet = currentAlphabetElement.innerHTML;
     const expectedAlphabet = currentAlphabet.toLowerCase();
-    console.log(pressedKey,expectedAlphabet);
+    // console.log(pressedKey,expectedAlphabet);
 
 
     if(pressedKey === currentAlphabet){
