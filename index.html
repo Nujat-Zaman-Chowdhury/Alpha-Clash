@@ -26,7 +26,7 @@
                     </div>
                     
                     <div class="flex justify-center items-center h-full">
-                        <p id="current-alphabet" class="text-[#010313] font-bold text-[128px]">Y</p>
+                        <p id="current-alphabet" class="text-[#010313] font-bold text-[128px] uppercase">Y</p>
                     </div>
                     
                 </div>
@@ -72,23 +72,24 @@
                     <button class="btn text-white bg-[#894189] border-0 rounded-full font-inter">
                         Life
                         <img src="images/life.svg" alt="">
-                        <p>1</p>
+                        <p id="current-life">5</p>
                     </button>
                     <button class="btn text-white bg-[#894189] border-0 rounded-full font-inter">
-                        Life
+                        Score
                         <img src="images/monetization.svg" alt="">
-                        <p>1</p>
+                        <p id="current-score">0</p>
                     </button>
                 </div>
             </div>
         </section>
-        <section class="score flex justify-center items-center min-h-screen hidden">
+        <section id="final-score" class="flex justify-center items-center min-h-screen hidden">
             <div class="text-white text-center space-y-5 bg-[#FFFFFF33] p-8 rounded-lg">
+                <h4 class="text-3xl">Game Over!!!</h4>
                 <h1 class="text-6xl">
-                    <span class="font-extrabold">Score:</span>
-                    <span>14</span>
+                    <span  class="font-extrabold">Score:</span>
+                    <span id="game-score">0</span>
                 </h1>
-                <button class="btn text-2xl">Play Again</button>
+                <button onclick="play()" class="btn text-2xl">Play Again</button>
                 <p class="text-xl">Practice will make you Pro</p>
             </div>
         </section>
